@@ -11,12 +11,40 @@
         android:src="@drawable/top"
         android:id="@+id/iv_top"
         android:visibility="invisible"
-        android:layout_gravity="center"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/like"
         android:layout_gravity="center"
-        android:id="@+id/iv_like"
         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/like"
+                android:layout_gravity="center"
+                android:id="@+id/iv_like"
+                />
+            <ImageView
+                android:id="@+id/iv_circle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/circle"
+                android:visibility="invisible" />
+        </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:id="@+id/tv_like_count"
+            android:textSize="30sp"
+            android:layout_gravity="bottom"
+            />
+    </LinearLayout>
 </LinearLayout>
